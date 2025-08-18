@@ -108,7 +108,7 @@ function Update-Flutter {
 
     if (!(Test-Path $flutterPath)) {
         Invoke-SilentlyIfNeeded {
-            git clone --filter=tree:0 https://github.com/shorebirdtech/flutter.git --no-checkout "$flutterPath" 
+            git clone --filter=tree:0 https://github.com/User404User/flutter.git --no-checkout "$flutterPath" 
         }
     }
     else {
