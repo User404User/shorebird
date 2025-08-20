@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rg -l \"libupdater|updater\\.a|updater\\.so\" --type gn)",
+      "Bash(rg:*)",
+      "Bash(rg -A5 -B5 \"libupdater|updater\\.a|updater\\.so\" shell/platform/android/BUILD.gn)",
+      "Bash(grep:*)",
+      "Bash(find /Users/coco/shorebird -type d -name \"updater\")",
+      "Bash(ls -la .gclient*)",
+      "Bash(chmod +x /Users/coco/shorebird/rebuild_engine_with_updater.sh /Users/coco/shorebird/shorebird_custom_engine_hook.sh /Users/coco/shorebird/fix_engine_build_issues.sh)",
+      "Bash(./rebuild_engine_with_updater.sh)",
+      "Bash(find /Users/coco/shorebird/bin/cache/flutter/362cdf13aa169e82f0baf03d06dbfb5501167fe7/bin/cache/artifacts/engine -name \"*.stamp\" -o -name \"*.version\" -o -name \"*.json\")",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(find:*)",
+      "Bash(git describe:*)",
+      "Bash(unzip:*)",
+      "Bash(md5:*)",
+      "Bash(export FLUTTER_STORAGE_BASE_URL=https://download.shorebird.dev)",
+      "Bash(./bin/flutter precache --android --verbose)",
+      "Bash(bin/flutter precache:*)",
+      "Bash(FLUTTER_STORAGE_BASE_URL=https://download.shorebird.dev bin/flutter precache --android)",
+      "Bash(shorebird cache:*)",
+      "Bash(shorebird release:*)",
+      "Bash(chmod:*)",
+      "Bash(env)",
+      "Bash(bash:*)",
+      "Bash(nm:*)",
+      "Bash(shasum:*)",
+      "Bash(gradle --help)"
+    ],
+    "deny": []
+  }
+}
